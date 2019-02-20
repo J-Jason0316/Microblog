@@ -1,0 +1,45 @@
+    
+    <!-- 网页头部 -->
+    <% include header.ejs %>
+    
+    <!-- 网页正文部分 -->
+
+    <form method="POST" class="form-horizontal">
+        <fieldset>
+            <legend>用户注册</legend>
+            <div class="control-group">
+                <label for="username" class="control-label">用户名</label>
+                <div class="controls">
+                    <input type="text" class="input-xlarge" id="username" name="username"></input>
+                    <p class="help-block">你的账户名称，用于登录和显示</p>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="password" class="control-label">密码</label>
+                <div class="controls">
+                    <input type="password" class="input-xlarge" id="password" name="password"></input>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="password-repeat" class="control-label">请重复密码</label>
+                <div class="controls">
+                    <input type="password" class="input-xlarge" id="password-repeat" name="password-repeat"></input>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                    注册
+                </button>
+            </div>
+        </fieldset>
+    </form>
+
+
+
+
+
+    <!-- 网页底部 -->
+    <% include footer.ejs %>
